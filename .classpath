@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/Users/bachir/Desktop/PostDoc/Implementation/oscar.coversize.1.0.0.jar"/>
+	<classpathentry kind="lib" path="/Users/bachir/Desktop/PostDoc/Implementation/oscar-install/oscar-2.0.0-scala2.11/oscar-2.0.0/lib/scala-parser-combinators_2.11-1.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/bachir/Desktop/PostDoc/Implementation/oscar-install/oscar-2.0.0-scala2.11/oscar-2.0.0/lib/scala-swing_2.11-1.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/bachir/Desktop/PostDoc/Implementation/oscar-install/oscar-2.0.0-scala2.11/oscar-2.0.0/lib/scala-xml_2.11-1.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/bachir/Desktop/PostDoc/Implementation/oscar-install/oscar-2.0.0-scala2.11/oscar-2.0.0/lib/scalacheck_2.11-1.11.3.jar"/>
+	<classpathentry kind="lib" path="/Users/bachir/Desktop/PostDoc/Implementation/oscar-install/oscar-2.0.0-scala2.11/oscar-2.0.0/lib/scalatest_2.11.0-RC3-2.1.2.jar"/>
+	<classpathentry kind="lib" path="/Users/bachir/Desktop/PostDoc/Implementation/oscar-install/oscar-2.0.0-scala2.11/oscar-2.0.0/lib/swingx-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/Users/bachir/Desktop/PostDoc/Implementation/oscar-install/oscar-2.0.0-scala2.11/oscar-2.0.0/lib/swingx-ws-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/bachir/Desktop/PostDoc/Implementation/oscar-install/oscar-2.0.0-scala2.11/oscar-2.0.0/lib/xml-apis-ext.jar"/>
+	<classpathentry kind="lib" path="/Users/bachir/Desktop/PostDoc/Implementation/oscar-install/oscar-2.0.0-scala2.11/oscar-2.0.0/lib/lpsolve55j.jar"/>
+	<classpathentry kind="lib" path="/Users/bachir/Desktop/PostDoc/Implementation/oscar-install/oscar-2.0.0-scala2.11/oscar-2.0.0/lib/antlr-4.4-complete.jar"/>
+	<classpathentry kind="lib" path="/Users/bachir/Desktop/PostDoc/Implementation/oscar-install/oscar-2.0.0-scala2.11/oscar-2.0.0/lib/glpk-java.jar"/>
+	<classpathentry kind="lib" path="/Users/bachir/Desktop/PostDoc/Implementation/oscar-install/oscar-2.0.0-scala2.11/oscar-2.0.0/lib/gurobi.jar"/>
+	<classpathentry kind="lib" path="/Users/bachir/Desktop/PostDoc/Implementation/oscar-install/oscar-2.0.0-scala2.11/oscar-2.0.0/lib/jcommon-1.0.17.jar"/>
+	<classpathentry kind="lib" path="/Users/bachir/Desktop/PostDoc/Implementation/oscar-install/oscar-2.0.0-scala2.11/oscar-2.0.0/lib/jfreechart-1.0.14.jar"/>
+	<classpathentry kind="lib" path="/Users/bachir/Desktop/PostDoc/Implementation/oscar-install/oscar-2.0.0-scala2.11/oscar-2.0.0/lib/jsci-core.jar"/>
+	<classpathentry kind="lib" path="/Users/bachir/Desktop/PostDoc/Implementation/oscar-install/oscar-2.0.0-scala2.11/oscar-2.0.0/lib/junit-4.10.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
