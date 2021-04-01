@@ -1,4 +1,4 @@
-# Usage of CP4AR
+# Usage of CP4MIS
 
 This is the usage of CP4MIS, the implementation of a constraint programming model for itemset mining with multiple minimum supports.
 
