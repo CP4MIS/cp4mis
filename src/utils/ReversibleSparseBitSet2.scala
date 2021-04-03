@@ -15,8 +15,16 @@
  * ****************************************************************************
  */
 
+/**
+ * Data structure (Reversible Sparse BitSet)
+ *
+ * @author John Aoga johnaoga@gmail.com
+ * @author Pierre Schaus pschaus@gmail.com
+ *         Relevant paper: Compact table and http://becool.info.ucl.ac.be/biblio/coversize-global-constraint-frequency-based-itemset-mining
+ *				2017
+ */
 
-package utils
+package fim.utils
 import java.lang.Long.bitCount
 object BitSetOp2 {
 
@@ -46,7 +54,17 @@ final class ReversibleSparseBitSetEntry(set: ReversibleSparseBitSet2, numberOfVa
   @inline override def restore(): Unit = set.restore(numberOfValues)
 }
 
-
+/**
+ * A reversible set with an internal bit-set representation.
+ * This set can remove efficiently its elements from another bit-set
+ * This set can compute efficiently its intersection with another bit-set
+ *
+ * @param context
+ * @param n             initial values must be taken from {0,...,n-1}
+ * @param initialValues the initial values contained in the set
+ * @author Pierre Schaus pschaus@gmail.com
+ * 2017
+ */
 case class ReversibleSparseBitSet2(val context: ReversibleContext, val n: Int, val initialValues: Iterable[Int]) {
 
   /**
