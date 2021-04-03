@@ -128,13 +128,8 @@ object MISRunner extends CPModel with App {
 
         //Additional constraints
         // 1. Distinct items
-        for (i <- 0 until config.k) {
-          for (k <- i + 1 until config.k) {
-            for (j <- 0 until nItems) {
-              if (tdbVertical(j).size >= frequency)
-                mySolver.add(R(i)(j).not || R(k)(j).not)
-            }
-          }
+        for (j <- 0 until nItems) {
+          mySolver.add(sum(0 until config.k)(i => R(i)(j)) <= 1)
         }
 
         // Symmetry breaking
