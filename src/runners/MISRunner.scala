@@ -200,7 +200,7 @@ object MISRunner extends CPModel with App {
         }
 
         mySolver.search {
-          binaryStatic(RSorted, _.min)
+          binaryStatic(RSorted, _.max)
         }
 
         //val stats = mySolver.start(1)
@@ -273,7 +273,7 @@ object MISRunner extends CPModel with App {
 
         //Strategy of search
         mySolver.search {
-          binaryStatic(Isorted, _.min)
+          binaryStatic(Isorted, _.max)
         }
 
         //The timeout = 3600s (default)
