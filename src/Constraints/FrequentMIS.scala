@@ -64,17 +64,20 @@ class FrequentMIS(val I: Array[CPBoolVar], var S: CPIntVar, var mis: Array[Int],
           temp.add(idx)
           misl.put(mis(idx), temp)
         }
-      } else {
-        misl.get(mis(idx)).get.remove(new Integer(idx))
-        if (misl.get(mis(idx)).get.isEmpty())
-          S.removeValue(mis(idx))
-      }
+      } 
     }
 
     i = nU
     while (i > 0) {
       i -= 1
       val idx = unboundNotInClosureIndices(i)
+      //Remove mis(idx) if all variables associated to mis(idx) are set to 0
+      if (I(idx).isBoundTo(0)) {
+
+        misl.get(mis(idx)).get.remove(new Integer(idx))
+        if (misl.get(mis(idx)).get.isEmpty())
+          S.removeValue(mis(idx))
+      }
       if (I(idx).isBound) {
 
         nU = removeItem(i, nU, idx)
@@ -83,12 +86,6 @@ class FrequentMIS(val I: Array[CPBoolVar], var S: CPIntVar, var mis: Array[Int],
         if (I(idx).min == 1) {
           coverage.intersectWith(columns(idx))
 
-        }
-        //Remove mis(idx) if all variables associated to mis(idx) are set to 0
-        if (I(idx).max == 0 && misl.get(mis(idx)).get.contains(idx)) {
-          misl.get(mis(idx)).get.remove(new Integer(idx))
-          if (misl.get(mis(idx)).get.isEmpty())
-            S.removeValue(mis(idx))
         }
       }
 
